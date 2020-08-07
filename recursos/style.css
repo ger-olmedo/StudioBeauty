@@ -1,0 +1,117 @@
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Spartan', sans-serif;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+header{
+    background-color: #f8f9fa ;
+    padding: 2.3rem;
+    overflow: auto;
+}
+h1{
+    font-size: 2.5rem;
+    vertical-align: sub;
+    font-family: "Spartan", sans-serif;
+    color: #495057;
+    background-image: url(../img/kisspng-leaf.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    padding-left: 8rem;
+}
+nav{
+    float: right;
+    margin: 1rem 1rem;
+}
+nav li{
+    display: inline;
+    margin: 0 1rem;
+
+}
+nav li :hover{
+    border-bottom: 0.5rem #495057 solid;
+    padding: 0.5rem;
+}
+nav li a{
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;   
+}
+/*SLIDER*/
+#tratamientos figure {
+    float: left;
+    width: 100vw;
+    position: relative;
+}
+img{
+    display: block;
+    width: 100%;
+}
+figure h2, span{
+    color: grey;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    display: block;
+}
+figure a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: grey;
+    border: 2px grey solid;
+    box-shadow: 0 0 6px #ccc;
+    padding: 10px;
+    background-color: ivory;
+    opacity: 0.7;
+}
+#fondo{
+    background-image: url(../img/chelsea.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+#tratamientos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 400vw;
+    animation-name: slider;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes slider{
+    0%{
+        margin-left: 0;
+    }
+    20%{
+        margin-left: -100vw;
+    }
+    40%{
+        margin-left: -200vw;
+    }
+    60%{
+        margin-left: -300vw;
+    }
+    80%{
+        margin-left: -400vw;
+    }
+    100%{
+        margin-left: -400vw;
+    }
+}
+#whatsapp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-image: url(../img/whatsapp.png);
+    background-position: center;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+
+}
